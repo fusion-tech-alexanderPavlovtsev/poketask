@@ -6,4 +6,5 @@ export {
   PAGE_SIZE,
   getTotalPagesCount,
   extractPokemonUrls,
+  DEFAULT_POKEMON_AVATAR_URL,
 } from "./common";

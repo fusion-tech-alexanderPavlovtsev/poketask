@@ -30,3 +30,6 @@ export const getTotalPagesCount = (
 export const extractPokemonUrls = (abilityPokemon: AbilityPokemon[]) => {
   return abilityPokemon.map((p) => p.pokemon.url);
 };
+
+export const DEFAULT_POKEMON_AVATAR_URL =
+  "https://us.v-cdn.net/6034460/uploads/defaultavatar/pLM1K8FMAJQON.jpg";

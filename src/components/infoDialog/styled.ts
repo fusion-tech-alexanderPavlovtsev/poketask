@@ -71,3 +71,14 @@ export const StyledPokemonLeftStatsCard = styled.div`
 export const StyledPokemonRightInfoCard = styled.div`
   padding: 5px;
 `;
+
+export const StyledPokemonImage = styled.div<{ isDefaultAvatar: boolean }>`
+  width: ${({ isDefaultAvatar }) => (isDefaultAvatar ? "50px" : "100px")};
+  height: ${({ isDefaultAvatar }) => (isDefaultAvatar ? "50px" : "100px")};
+  margin-top: 10px;
+  margin-bottom: 10px;
+  img {
+    width: 100%;
+    height: auto;
+  }
+`;

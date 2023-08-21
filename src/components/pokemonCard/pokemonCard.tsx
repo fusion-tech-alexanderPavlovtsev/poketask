@@ -11,6 +11,7 @@ import {
 } from "./styled";
 
 import type { Pokemon } from "../../models";
+import { DEFAULT_POKEMON_AVATAR_URL } from "../../utils";
 
 type CardProps = {
   pokemon: Pokemon;
@@ -25,7 +26,7 @@ export const PokemonCard: FC<CardProps> = ({
     handleSelectPokemon(pokemon);
   };
 
-  const pokemonImage = pokemon.image || "/images/default_pokemon_avatar.png";
+  const pokemonImage = pokemon.image || DEFAULT_POKEMON_AVATAR_URL;
   return (
     <Wrapper>
       <StyledPokemonId>{pokemon.id}</StyledPokemonId>
